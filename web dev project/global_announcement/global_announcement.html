@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Announcements</title>
+  <link rel="stylesheet" href="global_announcement.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="../profile/profile.html">Profile</a></li>
+        <li><a href="../files/files.html">Files</a></li>
+        <li><a href="../notification/notification.html">Notifications</a></li>
+        <li><a href="global_announcement.html" class="active">Global Announcements</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <h1>Global Announcements</h1>
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('current')">Current</button>
+        <button class="tab" onclick="showTab('recent')">Recent</button>
+      </div>
+      <div id="current" class="tab-content active">
+        <h2>Active Announcements</h2>
+        <div class="no-announcements">
+          <img src="cactus.png" alt="No Announcements">
+          <p>No announcement to display</p>
+        </div>
+      </div>
+      <div id="recent" class="tab-content">
+        <h2>Recent Announcements</h2>
+        <p>No recent announcements to display.</p>
+      </div>
+    </main>
+  </div>
+  <script src="global_announcement.js"></script>
+</body>
+</html>
