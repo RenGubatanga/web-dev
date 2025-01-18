@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Apply Flexbox layout to body */
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;  /* Stacks the sidebar items vertically */
+        padding: 20px;
+        background-color: #f3d3a1;
+        border-right: 1px solid #ccc;
+        width: 250px; /* Sidebar width */
+        min-height: 100vh; /* Ensure sidebar takes full height */
+    }
+
+    .icon-content div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .icon-content img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .icon-content a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+        max-width: 700px;
+        margin-left: 270px; /* Create space for the sidebar */
+        background-color: #f5f5f5;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .menu-icon {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .content-box {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .sideba_content{
+        margin-top: 40px;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="icon-content">
+            <div class="sideba_content"><span><img src="../icon/profile.jpg" alt=""></span><a href="../profile/profile.html">Profile</a></div>
+            <div class="sideba_content"><span><img src="../icon/files.jpg" alt=""></span><a href="../files/files.html">Files</a></div>
+            <div class="sideba_content"><span><img src="../icon/notification.jpg" alt=""></span><a href="/notification/notification.html">Notification</a></div>
+            <div class="sideba_content"><span><img src="../icon/announcement.jpg" alt=""></span><a href="../global_announcement/global_announcement.html">Global Announcement</a></div>
+            <div class="sideba_content"><span><img src="../icon/setting.jpg" alt=""></span><a href="setting.html">Settings</a></div>
+            <div class="sideba_content"><span><img src="../icon/help.jpg" alt=""></span><a href="../help/help.html">Help</a></div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <h1>Settings</h1>
+        </header>
+
+        <div class="content-box">
+            <div class="section">
+                <h2>Full Name</h2>
+                <h2>Email</h2>
+                <h2>Block Users</h2>
+                <h2>Activity Logging</h2>
+                <h2>Account Deletion</h2>
+            </div>
+
+            <div class="section">
+                <h2>Email Address</h2>
+                <p>Option to update email address</p>
+            </div>
+
+            <div class="section">
+                <h2>Blocked Users</h2>
+                <p>Block/Unblock users</p>
+            </div>
+
+            <div class="section">
+                <h2>Account Deletion</h2>
+                <p>Permanently delete the account with all associated data</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
